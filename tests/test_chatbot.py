@@ -31,6 +31,3 @@ def test_get_response():
     intent = [{"intent": "unknown", "probability": "0.85"}]
     result = get_response(intent, intents_json)
     assert result == "I'm sorry, I didn't understand that."
-
-if __name__ == "__main__":
-    pytest.main()
